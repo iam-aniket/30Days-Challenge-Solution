@@ -71,11 +71,10 @@ int main()
 	if (row_flag)
 		rep(i, 0, n)
 		a[0][i] = 1;
-
 	if (col_flag)
 		rep(i, 0, m)
 		a[i][0] = 1;
-
+	
 	rep(i, 0, m)
 	{
 		rep(j, 0, n)
