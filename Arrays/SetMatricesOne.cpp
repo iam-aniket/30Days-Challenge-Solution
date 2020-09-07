@@ -1,22 +1,7 @@
 #include<bits/stdc++.h>
 #define tek ios_base::sync_with_stdio(false);cin.tie(0)
 #define rep(i,a,n) for(int i = a; i < n; i++)
-#define per(i,a) for(int i = a; i >= 0; i--)
-#define lli long long
-#define pb push_back
-#define mp make_pair
 #define nl cout<<"\n"
-#define ff first
-#define ss second
-#define vi vector<int>
-#define pie 3.1415926535
-#define mx(a,n) *max_element(a,a+n)
-#define mn(a,n) *min_element(a,a+n)
-#define aop(a,n) rep(i,0,n) cout<<a[i]<<" ";nl
-#define aip(a,n) rep(i,0,n) cin>>a[i]
-#define so(a,n) sort(a,a+n)
-#define sodesc(a,n) sort(a,a+n,sortbydesc)
-#define tc int t = 1;cin>>t;while(t--)
 
 using namespace std;
 
@@ -43,7 +28,11 @@ int main()
 	int a[m + 1][n + 1] = {0};
 	rep(i, 0, m)rep(j, 0, n)cin >> a[i][j];
 
-	//If a[i][j] is marked 1 make all cells of i'th row and j'th coloumn to 0
+	//Given a boolean matrix mat[M][N] of size M X N,
+	//modify it such that if a matrix cell mat[i][j] is 1 (or true)
+	//then make all the cells of ith row and jth column as 1.
+
+	//If a[i][j] is marked 1 make all cells of i'th row and j'th coloumn to 1
 
 	//VVI Optimization for space
 
@@ -69,7 +58,7 @@ int main()
 		}
 	}
 
-	//VVI - Note here start i and j start from 1 
+	//VVI - Note here start i and j start from 1
 	//as First filling only (m-1)(n-1)
 
 	rep(i, 1, m)
